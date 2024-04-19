@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio Web</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Cinthia</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#educación" onclick="seleccionar()">EDUCACIÓN</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">REDES</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Cinthia A.</h1>
+            <h2>Estudiante Ingeniería en Sistemas</h2>
+            <h2>UNAH-CU</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/cinthia.alvarado.1044186?mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f" ></i></a>
+                <a href="https://github.com/CinthiaAV"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/cinthia_vvv?igsh=ajI2NWQyeWpkdXRs/"><i class="fa-brands fa-instagram"></i></a>
+                <ul>clalvaradov@unah.hn</ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <div class="photo"><img src="photo.png" style="display:block; width: 150px; height: 200px; margin-right: auto; margin-left: auto;" alt=""></div>
+                <p><span>Hola, soy Lili.</span> Mi nombre completo es Cinthia Lilibeth Alvarado Villalobos, tengo 17 años (casi 18), soy de Cantarranas-Francisco Morazán.
+            Siempre trato de ser amable y tener una buena relación con mis compañeros y licenciados, soy muy responsable y me gusta trabajar en equipo.
+            Soy muy centrada y competente, y de lo que no se trato de aprenderlo para poder mejorar.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            04 de Mayo
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            8946-5239
+                        </li>
+                        <li>
+                            <strong>Correo Institucional</strong>
+                            clalvaradov@unah.hn
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Cantarranas-Francisco Morazán
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- SECCION EDUCACIÓN -->
+    <section id="educación" class="educación">
+        <div class="contenido-seccion">
+            <h2>Educación</h2>
+            <div class="fila">
+                    <div class="item">
+                        <h4>Primaria</h4>
+                        <span class="casa">Escuela Urbana Mixta Francisco Ferrera</span>
+                        <span class="fecha">2012 - 2017</span>
+                        <p>Curse mis 6 años escolares en la escuela de mi pueblo :)</p>
+                        <div class="conector">
+                            <div class="circulo"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h4>Secundaria</h4>
+                        <span class="casa">Instituto Polivalente San Juan de Flores</span>
+                        <span class="fecha">2018 - 2020</span>
+                        <p>Estudie el curso en este instituto. </p>
+                        <div class="conector">
+                            <div class="circulo"></div>
+                        </div>
+                    </div>
+                        <div class="item">
+                            <h4>Diversificado</h4>
+                        <span class="casa">Instituto Polivalente Villa de San Francisco y CEMG Técnico Héctor V. Medina</span>
+                        <span class="fecha">2021 - 2023</span>
+                        <p>Estudia año y medio en la Villa y me cambie de colegio graduándome en Bachiller Técnico Profesional en Informática en el Héctor.</p>
+                        <div class="conector">
+                            <div class="circulo"></div>
+                        </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PROYECTOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img1.png" alt="">
+                    <div class="overlay">
+                        <h3>Presentación</h3>
+                        <p>HTML</p>
+                        <a href="https://github.com/CinthiaAV/Lab-IS-110/blob/main/html/index.html" target="_blank">
+                            <i class="fas fa-link"></i> 
+                          </a>
+                          <p>Presentación sobre mí</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img2.png" alt="">
+                    <div class="overlay">
+                        <h3>NIKE</h3>
+                        <p>HTML</p>
+                        <a href="https://github.com/CinthiaAV/Lab-IS-110/blob/main/Nike/index.html" target="_blank">
+                            <i class="fas fa-link"></i> 
+                          </a>
+                          <p>Recreación página principal NIKE</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img3.png" alt="">
+                    <div class="overlay">
+                        <h3>Namecheap</h3>
+                        <p>HTML</p>
+                        <a href="https://github.com/CinthiaAV/Lab-IS-110/blob/main/namecheap/index.html" target="_blank">
+                            <i class="fas fa-link"></i> 
+                          </a>
+                          <p>Recreación página principal Namecheap</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <footer>
+                <ul>Correo institucional - clalvaradov@unah.hn</ul>
+                <a href="https://www.facebook.com/cinthia.alvarado.1044186?mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f" ></i></a>
+                <a href="https://github.com/CinthiaAV"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/cinthia_vvv?igsh=ajI2NWQyeWpkdXRs/"><i class="fa-brands fa-instagram"></i></a>  
+            
+        </footer>
+        </div>
+    </section>
+</body>
+</html>
